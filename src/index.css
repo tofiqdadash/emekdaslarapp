@@ -5,9 +5,187 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App{
+  width: 1200px;
+  height: 700px;
+  border-radius: 20px;
+  background-color: #f0ebe1;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow-y: scroll;
+}
+
+
+.Employees{
+ padding: 5px 15px;
+}
+
+
+.Employees h1{
+  text-align: center;
+}
+
+
+.an-employee{
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.an-employee img{
+  width: 20px;
+  cursor: pointer;
+}
+
+.an-employee h4{
+  margin: 0;
+}
+
+.employee-title{
+  background-color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.employee-title h4{
+  margin-right: auto;
+}
+
+.content{
+  padding: 0 20px;
+}
+
+.Accordion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.accordion-item{
+  margin-right: 3rem;
+  display: flex;
+  background-color: white;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.accordion-item img{
+  width: 55px;
+  height: 55px;
+  background-color: #f0ebe1;
+  padding: 15px;
+  border-radius: 10px;
+  margin-left: -15px;
+  margin-right: 15px;
+  cursor: inherit;
+}
+
+
+.employee-title .delete-button{
+  margin-left: 15px;
+  width: 30px;
+}
+
+
+.accordion-item h5{
+  font-size: 17px;
+  text-align: center;
+  margin: 0;
+}
+
+.accordion-item p{
+  color: #9c9c9c;
+  text-align: center;
+}
+
+/* MODAL */
+.modal-background{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top:0;
+  left:0;
+background: rgba(255, 255, 255, 0.19);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10.3px);
+-webkit-backdrop-filter: blur(10.3px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.modal-container{
+  width: 500px;
+  height: 250px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+
+.title{
+  position: relative;
+  background-color: #f1eeee;
+  padding: 40px 15px;
+  border-radius: 10px;
+}
+
+.close-btn{
+  position: absolute;
+  right: 10px;
+  top: 3.7rem;
+  width: 23px;
+  height: 23px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  align-self: flex-end;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+
+.cancel-btn , .confirm-btn{
+  background-color: transparent;
+  padding: 10px 25px;
+  border-color: #cac8c8;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+.footer{
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.confirm-btn{
+  margin-left: 15px;
+}
+
+.title p{
+  color: red;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
