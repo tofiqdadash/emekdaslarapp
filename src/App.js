@@ -4,6 +4,7 @@ import {
   Route,
 } from 'react-router-dom';
 import Employees from './views/Employees';
+import Groups from './views/EmployeesChart/Groups';
 
 
 
@@ -13,6 +14,7 @@ function App() {
       <div className='App'>
         <Routes>
        <Route path="/employees" element={<Employees />} />
+       <Route path="/groups" element={<Groups />} />
        </Routes>
       </div>
 

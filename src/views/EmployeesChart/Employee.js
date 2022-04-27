@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import AccordionContent from "./AccordionContent";
-import Modal from "./Modal";
+import Modal from "../../components/Modal";
 import axios from 'axios';
 
 const Employee = () => {
@@ -61,7 +61,10 @@ const Employee = () => {
 
       {openModal && <Modal 
       handleDelete={handleDelete}
-      closeModal={() => setOpenModal(false)} />}
+      closeModal={() => setOpenModal(false)}
+      header={"Əməkdaşı silinmesi"}
+      title={"Emekdasi silmeye eminsiniz?"}
+      />}
     </div>
   );
 };

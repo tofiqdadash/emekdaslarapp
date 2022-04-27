@@ -125,8 +125,6 @@ code {
 background: rgba(255, 255, 255, 0.19);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(10.3px);
--webkit-backdrop-filter: blur(10.3px);
 border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -139,6 +137,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   display: flex;
   flex-direction: column;
   padding: 25px;
+  background-color: #fff;
 }
 
 
@@ -189,3 +188,33 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   font-size: 1.2rem;
   font-weight: 600;
 }
+
+
+.cancel-button{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.cancel-button img{
+  width: 20px;
+}
+
+.todo{
+  margin-bottom: 10px;
+  display: flex;
+  padding: 10px;
+}
+
+ .Groups ul{
+  list-style-type: none;
+}
+
+.todo li{
+  margin-right: auto;
+}
+
+.todo li::before{
+  content: "-";
+}
+
